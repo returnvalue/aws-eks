@@ -9,7 +9,7 @@ This repository contains hands-on labs demonstrating core Amazon EKS concepts, f
 Based on AWS best practices (SAA-C03), these labs cover:
 * **Control Plane Management:** Provisioning managed EKS clusters with IAM service roles.
 * **Networking Foundation:** Designing multi-AZ VPCs required for Kubernetes reliability.
-* **Worker Nodes:** (Upcoming) Deploying managed and self-managed node groups.
+* **Worker Nodes:** Deploying and scaling EC2 Managed Node Groups.
 * **Kubernetes Orchestration:** (Upcoming) Deploying applications using Helm and kubectl.
 * **EKS Security:** (Upcoming) Implementing IRSA (IAM Roles for Service Accounts).
 * **Observability:** (Upcoming) Monitoring clusters with CloudWatch container insights.
@@ -36,7 +36,8 @@ Based on AWS best practices (SAA-C03), these labs cover:
 > [!IMPORTANT]
 > **Cumulative Architecture:** These labs are designed as a cumulative scenario. You are building an evolving Kubernetes infrastructure.
 >
-> **Session Persistence:** These labs rely on bash variables (like `$VPC_ID`, `$CLUSTER_ROLE_ARN`, etc.). Run all commands in the same terminal session to maintain context.
+> **Session Persistence:** These labs rely on bash variables (like `$VPC_ID`, `$CLUSTER_ROLE_ARN`, `$NODE_ROLE_ARN`, etc.). Run all commands in the same terminal session to maintain context.
 
 ## 📚 Labs Index
 1. [Lab 1: Network Foundation & Control Plane](./labs/lab1-eks-foundation/README.md)
+2. [Lab 2: Data Plane (Managed Node Groups)](./labs/lab2-eks-nodegroups/README.md)
