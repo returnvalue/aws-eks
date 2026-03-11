@@ -11,7 +11,7 @@ Based on AWS best practices (SAA-C03), these labs cover:
 * **Networking Foundation:** Designing multi-AZ VPCs required for Kubernetes reliability.
 * **Worker Nodes:** Deploying and scaling EC2 Managed Node Groups.
 * **Serverless Kubernetes:** Using Fargate Profiles to run pods without managing nodes.
-* **EKS Security:** Implementing IRSA (IAM Roles for Service Accounts) with OIDC.
+* **EKS Security:** Implementing IRSA (IAM Roles for Service Accounts) and modern Access Entries.
 * **Cluster Add-ons:** Managing operational software like VPC CNI natively via the EKS API.
 * **Kubernetes Orchestration:** (Upcoming) Deploying applications using Helm and kubectl.
 * **Observability:** (Upcoming) Monitoring clusters with CloudWatch container insights.
@@ -38,7 +38,7 @@ Based on AWS best practices (SAA-C03), these labs cover:
 > [!IMPORTANT]
 > **Cumulative Architecture:** These labs are designed as a cumulative scenario. You are building an evolving Kubernetes infrastructure.
 >
-> **Session Persistence:** These labs rely on bash variables (like `$VPC_ID`, `$CLUSTER_ROLE_ARN`, `$OIDC_URL`, etc.). Run all commands in the same terminal session to maintain context.
+> **Session Persistence:** These labs rely on bash variables (like `$VPC_ID`, `$CLUSTER_ROLE_ARN`, `$OIDC_URL`, `$DEV_ROLE_ARN`, etc.). Run all commands in the same terminal session to maintain context.
 
 ## 📚 Labs Index
 1. [Lab 1: Network Foundation & Control Plane](./labs/lab1-eks-foundation/README.md)
@@ -46,3 +46,4 @@ Based on AWS best practices (SAA-C03), these labs cover:
 3. [Lab 3: Serverless Data Plane (Fargate Profiles)](./labs/lab3-eks-fargate-profiles/README.md)
 4. [Lab 4: Security Identity (OIDC & IRSA)](./labs/lab4-eks-irsa/README.md)
 5. [Lab 5: Cluster Add-ons Management (VPC CNI)](./labs/lab5-eks-addons/README.md)
+6. [Lab 6: Modern Access Management (Access Entries)](./labs/lab6-eks-access-management/README.md)
