@@ -12,6 +12,7 @@ Based on AWS best practices (SAA-C03), these labs cover:
 * **Worker Nodes:** Deploying and scaling EC2 Managed Node Groups.
 * **Serverless Kubernetes:** Using Fargate Profiles to run pods without managing nodes.
 * **EKS Security:** Implementing IRSA (IAM Roles for Service Accounts) with OIDC.
+* **Cluster Add-ons:** Managing operational software like VPC CNI natively via the EKS API.
 * **Kubernetes Orchestration:** (Upcoming) Deploying applications using Helm and kubectl.
 * **Observability:** (Upcoming) Monitoring clusters with CloudWatch container insights.
 
@@ -44,3 +45,4 @@ Based on AWS best practices (SAA-C03), these labs cover:
 2. [Lab 2: Data Plane (Managed Node Groups)](./labs/lab2-eks-nodegroups/README.md)
 3. [Lab 3: Serverless Data Plane (Fargate Profiles)](./labs/lab3-eks-fargate-profiles/README.md)
 4. [Lab 4: Security Identity (OIDC & IRSA)](./labs/lab4-eks-irsa/README.md)
+5. [Lab 5: Cluster Add-ons Management (VPC CNI)](./labs/lab5-eks-addons/README.md)
