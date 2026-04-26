@@ -1,7 +1,6 @@
 # Lab 4: Security Identity (OIDC & IRSA)
 
 **Goal:** Implement IAM Roles for Service Accounts (IRSA). This prevents pods from sharing the broad permissions of the EC2 node they run on by giving the cluster its own OpenID Connect (OIDC) identity provider.
-
 ```bash
 # 1. Retrieve the cluster's OIDC Issuer URL
 OIDC_URL=$(awslocal eks describe-cluster --name PortfolioCluster --query 'cluster.identity.oidc.issuer' --output text)

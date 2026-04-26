@@ -1,7 +1,6 @@
 # Lab 5: Cluster Add-ons Management (VPC CNI)
 
 **Goal:** EKS clusters rely on operational software (Add-ons) like the VPC CNI (for networking) and CoreDNS. Manage these natively through the AWS API to ensure they are updated and patched alongside the cluster control plane.
-
 ```bash
 # Install the Amazon VPC CNI add-on directly via the EKS API
 awslocal eks create-addon \

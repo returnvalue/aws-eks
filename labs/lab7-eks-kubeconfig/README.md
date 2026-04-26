@@ -1,7 +1,6 @@
 # Lab 7: Connecting to the Cluster (kubeconfig)
 
 **Goal:** Generate the local configuration file required by `kubectl` to authenticate with the EKS API server and manage Kubernetes resources.
-
 ```bash
 # Generate and update the local kubeconfig file
 awslocal eks update-kubeconfig \

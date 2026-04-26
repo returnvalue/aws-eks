@@ -1,7 +1,6 @@
 # Lab 1: Network Foundation & Control Plane
 
 **Goal:** EKS requires a VPC with at least two subnets in different Availability Zones. We will create the network, the EKS Service Role, and provision the managed Control Plane.
-
 ```bash
 # 1. Create VPC and Subnets
 VPC_ID=$(awslocal ec2 create-vpc --cidr-block 10.0.0.0/16 --query 'Vpc.VpcId' --output text)

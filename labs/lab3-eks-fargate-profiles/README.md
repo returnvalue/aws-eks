@@ -1,7 +1,6 @@
 # Lab 3: Serverless Data Plane (Fargate Profiles)
 
 **Goal:** We want certain workloads to run entirely serverless. Create a Fargate Profile so that any pod deployed to the `serverless-apps` namespace is automatically scheduled on AWS Fargate instead of our EC2 nodes.
-
 ```bash
 # 1. Create the Fargate Pod Execution Role
 cat <<EOF > fargate-trust.json

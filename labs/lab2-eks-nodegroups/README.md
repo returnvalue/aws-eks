@@ -1,7 +1,6 @@
 # Lab 2: Data Plane (Managed Node Groups)
 
 **Goal:** The control plane is running, but we have no worker nodes to schedule pods on. We will create an EC2 Managed Node Group to provide the underlying compute power for our Kubernetes cluster.
-
 ```bash
 # 1. Create the Node IAM Role (Allows EC2 nodes to pull images and join the cluster)
 cat <<EOF > node-trust.json
